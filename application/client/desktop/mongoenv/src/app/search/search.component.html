@@ -1,0 +1,22 @@
+<h2>Search</h2>
+<form class='undefined'>
+<div  class=' undefined'>
+<label  class=' undefined'>
+Name
+</label>
+<input  class=' undefined undefined' placeholder='Type here your name' name=input_template-i95i [(ngModel)]="studentdetails.Name" [ngModelOptions]="{standalone: true}"/></input>
+</div>
+<div  class=' undefined'>
+<label  class=' undefined'>
+Email
+</label>
+<input  class=' undefined undefined' type='email' placeholder='Type here your email' name=input_template-iriz [(ngModel)]="studentdetails.Email" [ngModelOptions]="{standalone: true}"/></input>
+</div>
+<div  class=' undefined'>
+<button  class=' undefined undefined undefined' type='submit' name=button_template-iwg2u (click)="GpSearch()">search</button>
+Send
+</div>
+</form>
+<div class='template-i0ctm' name=grid_template-i0ctm>
+<ag-grid-angular #agGrid style="width: 100%; height: 100%;" id="myGrid" class="ag-theme-balham" [columnDefs]="columnDefs" [pagination]="true" [paginationPageSize]="paginationPageSize" [defaultColDef]="defaultColDef" [rowData]="rowData" [rowSelection]="rowSelection" (gridReady)="onGridReady($event)" (selectionChanged)="onSelectionChanged($event)" domLayout='autoHeight'></ag-grid-angular>
+</div>
